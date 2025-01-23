@@ -1,5 +1,7 @@
 # PremierePad
 
+The actual pad can be accessed here: https://github.com/cloudyio/hackpad/tree/main/hackpads/premierepad
+
 PremierePad is a customizable macropad designed primarily for editing tasks. It allows you to bind specific actions to save time and perform complex macros to streamline your workflow.
 
 ## About
