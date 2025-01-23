@@ -24,7 +24,7 @@ The macropad is mainly made for editing, allowing you to bind specific actions y
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://raw.githubusercontent.com/cloudyio/premierepad/refs/heads/master/LICENSE) file for more details.
 
 
 Made by Cloudy
