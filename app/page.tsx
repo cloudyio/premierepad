@@ -7,7 +7,13 @@ import { useRef, useState, useEffect } from "react";
 import { Group } from "three";
 import * as THREE from "three";
 
-function CustomModel({ isScrolled, scale, onLoaded }) {
+interface CustomModelProps {
+  isScrolled: boolean;
+  scale: [number, number, number];
+  onLoaded: () => void;
+}
+
+function CustomModel({ isScrolled, scale, onLoaded }: CustomModelProps) {
   const gltf = useLoader(GLTFLoader, "/models/pad.gltf", undefined, () => onLoaded());
   const pivot = useRef<Group>(null);
 
@@ -34,10 +40,10 @@ function CustomModel({ isScrolled, scale, onLoaded }) {
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [scale, setScale] = useState([1, 1, 1]);
+  const [scale, setScale] = useState<[number, number, number]>([1, 1, 1]);
   const [isKeybindsVisible, setIsKeybindsVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const keybindsRef = useRef(null);
+  const keybindsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
